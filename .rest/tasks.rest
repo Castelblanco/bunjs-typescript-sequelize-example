@@ -1,0 +1,32 @@
+@apiLocal = http://localhost:5000/v1/tasks
+@nameQuerys = 
+@doneQuerys = 
+@projectIdQuerys = 2
+
+###
+GET {{apiLocal}}/get-all?name={{nameQuerys}}&done={{doneQuerys}}&projectId={{projectIdQuerys}}
+
+###
+GET {{apiLocal}}/get-by-id/1
+
+###
+POST {{apiLocal}}/save
+Content-Type: application/json
+
+{
+    "name": "task 1",
+    "done": "false",
+    "project_id": 3
+}
+
+###
+PUT {{apiLocal}}/update/3
+Content-Type: application/json
+
+{
+    "name": "task 3",
+    "done": "true"
+}
+
+###
+DELETE {{apiLocal}}/delete/1

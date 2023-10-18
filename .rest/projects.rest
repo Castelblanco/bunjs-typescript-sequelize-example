@@ -1,0 +1,33 @@
+@apiLocal = http://localhost:5000/v1/projects
+
+@nameQuery = 
+@priorityQuery = 
+
+###
+GET {{apiLocal}}/get-all?name={{nameQuery}}&priority={{priorityQuery}}
+
+###
+GET {{apiLocal}}/get-by-id/1
+
+###
+POST {{apiLocal}}/save
+Content-Type: application/json
+
+{
+    "name": "project 3",
+    "description": "three project",
+    "priority": "5"
+}
+
+###
+PUT {{apiLocal}}/update/1
+Content-Type: application/json
+
+{
+    "name": "project 1.2",
+    "description": "second project",
+    "priority": "2"
+}
+
+###
+DELETE {{apiLocal}}/delete/1
