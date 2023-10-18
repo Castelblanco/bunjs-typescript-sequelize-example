@@ -1,15 +1,17 @@
 # sequelize-example
 
+<h1>Description</h1>
+<p>Personal project the Node.js, Typescript, Express, Sequelize.</p>
+<p>REST-API based in create projects and tasks for projects</p>
+
 To install dependencies:
 
 ```bash
-bun install
+npm install or npm i
 ```
 
 To run:
 
 ```bash
-bun run index.ts
+npm run dev
 ```
-
-This project was created using `bun init` in bun v1.0.6. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
