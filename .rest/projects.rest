@@ -7,16 +7,16 @@
 GET {{apiLocal}}/get-all?name={{nameQuery}}&priority={{priorityQuery}}
 
 ###
-GET {{apiLocal}}/get-by-id/1
+GET {{apiLocal}}/get-by-id/2
 
 ###
 POST {{apiLocal}}/save
 Content-Type: application/json
 
 {
-    "name": "project 3",
-    "description": "three project",
-    "priority": "5"
+    "name": "project 4",
+    "description": "four project",
+    "priority": "10"
 }
 
 ###

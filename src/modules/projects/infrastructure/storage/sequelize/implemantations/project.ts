@@ -124,15 +124,6 @@ export class ProjectSequelizeRepository implements TProjectRepository {
 
         let options: WhereOptions<TProjectDAL> = {};
 
-        /* for (const key of Object.keys(filter)) {
-            const value = filter[key as keyof TProjectFilterDOM];
-
-            if (!value) return;
-            options = this.filtersIf[key as keyof TProjectFilterDOM](
-                options,
-                value
-            );
-        } */
         Object.keys(filter).forEach((key) => {
             const value = filter[key as keyof TProjectFilterDOM];
 
@@ -142,8 +133,6 @@ export class ProjectSequelizeRepository implements TProjectRepository {
                 value
             );
         });
-
-        console.log({ options });
 
         return options;
     };
