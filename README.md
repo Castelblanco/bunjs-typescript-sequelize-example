@@ -1,13 +1,13 @@
 # sequelize-example
 
 <h1>Description</h1>
-<p>Personal project the Node.js, Typescript, Express, Sequelize.</p>
+<p>Personal project the Bun.js, Typescript, Express, Sequelize.</p>
 <p>REST-API based in create projects and tasks for projects</p>
 
 To install dependencies:
 
 ```bash
-npm install or npm i
+bun install
 ```
 
 To run:
